@@ -1,3 +1,3 @@
 # demo-node
 
-A demo nodejs API managed by DReAM
+A demo nodejs API managed by DReAM.
