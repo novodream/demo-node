@@ -37,7 +37,10 @@ jobs:
         run: dream login --token $DREAM_TOKEN
 
       - name: Set workspace
-        run: dream init -w prd
+        run: |
+          dream init -w prd
 
       - name: Deploy
-        run: dream up
+        run: |
+          dream up
+          cat .dream/env.prd.yml
