@@ -1,0 +1,8 @@
+packages:
+  auth0_api: ""
+  sendgrid_mail: ""
+  mongodb: ""
+deploy:
+  heroku_nodejs: ""
+projectId: 62eef617c0da7f6b2b8ff2b2
+workspace: dev

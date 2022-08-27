@@ -1,0 +1,11 @@
+scopes:
+  - value: read:movies
+    description: Read movies
+  - value: create:movies
+    description: Create movies
+  - value: update:movies
+    description: Update movies
+  - value: delete:movies
+    description: Delete movies
+  - value: send:mail
+    description: Send mail
