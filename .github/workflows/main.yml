@@ -43,4 +43,3 @@ jobs:
       - name: Deploy
         run: |
           dream up
-          cat .dream/env.prd.yml
