@@ -36,7 +36,8 @@ jobs:
           DREAM_TOKEN: ${{ secrets.DREAM_TOKEN }}
         run: dream login --token $DREAM_TOKEN
 
+      - name: Set workspace
+        run: dream init -w prd
+
       - name: Deploy
-        run: |
-          dream init -w prd
-          dream up
+        run: dream up
