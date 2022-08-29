@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 const PORT = process.env.PORT || 8080;
 
 app.get('/', (req, res) => {
-    res.send({message: 'Hello World!'});
+    res.send({message: 'Hello World from My Movies App!'});
 });
 
 app.get('/movies', checkJwt, requiredScopes('read:movies'), async (req, res) => {
@@ -47,7 +47,7 @@ app.delete('/movies/:id', checkJwt, requiredScopes('delete:movies'), async (req,
 
 app.post('/mail', checkJwt, requiredScopes('send:mail'), async (req, res) => {
     const {email, message} = req.body;
-    
+
     await sgMail.send({
         to: email,
         from: 'demonode.dream@novopattern.com',
